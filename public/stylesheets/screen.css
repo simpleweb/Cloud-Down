@@ -1,0 +1,70 @@
+body, html{
+	color: black;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+h1{
+	font-size: 42px;
+	font-weight: bold;
+	line-height: 1em;
+	margin-bottom:0;
+	letter-spacing: -2px;
+	padding-bottom:0;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+}
+h2{
+	letter-spacing: -1px;
+	line-height: 1.2em;
+	font-size: 24px;
+	margin-top:1em;
+	margin-bottom:2em;
+}
+h3{
+	font-size: 18px;
+	font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	letter-spacing: -1px;
+}
+strong{
+	font-weight: bold;
+}
+
+/* @group Generic Menu */
+ul.menu{
+	float:left;
+	margin:0;
+	padding:0;
+	position: relative;
+	height: 1%;
+}
+ul.menu li{
+	display:inline;
+	float:left;
+	margin:0 .5em 0 0;
+	padding: 0 .5em 0 0;
+	border-right: 1px solid;
+	line-height: 1.5em;
+}
+ul.menu li.last{
+	border-right: none;
+}
+
+/* @end */
+
+#genres{
+	margin:2em auto 2em;
+}
+#genres li{border:none;}
+#genres li a{
+	background-color:#bbb;
+	color:#fff;
+	padding:.5em 1em;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	text-transform:uppercase;
+	letter-spacing:2px;
+		font-family: "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+		text-decoration:none;
+}
+#genres li.on a{
+		background-color:#222;
+		color:#39f;
+}
