@@ -5,8 +5,8 @@
 # Make sure the secret is at least 30 characters and all random, 
 # no regular words or you'll be exposed to dictionary attacks.
 ActionController::Base.session = {
-  :key         => '_clouddown_session',
-  :secret      => '8ec80d33cabf76638259243d1fff9dc46c7b69ac34d730c583b58e1f576c1a8f98d952e44ea5afbfa46973bf474add1caacb0064567160aefe170c3bbd45c0f8'
+  :key         => '_Cloud-Down_session',
+  :secret      => '874ff1cb0c92ffdf3b4bbfe59d7aa8a403faab5b1f6aac1309780edc0dacbb7702e760316cc0a04dd1e5cf53d850afe594a2d094bba0b421fd2112b8ef92f89d'
 }
 
 # Use the database for sessions instead of the cookie-based default,

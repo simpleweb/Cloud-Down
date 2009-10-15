@@ -15,8 +15,11 @@ Rails::Initializer.run do |config|
   # config.load_paths += %W( #{RAILS_ROOT}/extras )
 
   # Specify gems that this application depends on and have them installed with rake gems:install
-  # config.gem "bj"
-  # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
+   config.gem "multipart"
+  
+  config.gem "oauth"
+   config.gem "jwagener-oauth-active-resource", :lib => "oauth_active_resource", :source => "http://gems.github.com"
+   config.gem "soundcloud-ruby-api-wrapper", :lib => "soundcloud", :source => "http://gems.github.com"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
 
