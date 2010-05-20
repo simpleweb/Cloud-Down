@@ -2,17 +2,17 @@
 <h2>Only full track downloads from Soundcloud</h2>
 
 <div id="nav"><ul id="genres" class="menu">
-	<li class="<% if @genre == "house" %>on<% end %>"><a href="/?genre=house">House</a></li>
-	<li class="<% if @genre == "techno" %>on<% end %>"><a href="/?genre=techno">Techno</a></li>
-	<li class="<% if @genre == "acid" %>on<% end %>"><a href="/?genre=acid">Acid</a></li>
-	<li class="<% if @genre == "hip hop" %>on<% end %>"><a href="/?genre=hip hop">Hip Hop</a></li>
-	<li class="<% if @genre == "drum and bass, dnb" %>on<% end %>"><a href="/?genre=drum and bass, dnb">Drum and Bass</a></li>
+	<li class="<%=class_for "house"%>"><a href="/?genre=house">House</a></li>
+	<li class="<%=class_for "techno"%>"><a href="/?genre=techno">Techno</a></li>
+	<li class="<%=class_for "acid"%>"><a href="/?genre=acid">Acid</a></li>
+	<li class="<%=class_for "hip hop"%>"><a href="/?genre=hip hop">Hip Hop</a></li>
+	<li class="<%=class_for "drum and bass, dnb"%>"><a href="/?genre=drum and bass, dnb">Drum and Bass</a></li>
 </ul></div>
 
 <ul class="trackList">
 <% @hot_tracks.each do |track| %>
 	<li>
-	<% if track.streamable %><a class="soundcloud-player custom-size" id="custom-size" href="<%=h track.uri %>">Play</a><% end %>
+	<% if track.streamable %><a class="soundcloud-player custom-size" id="custom-size" href="<%=h track.permalink_url %>">Play</a><% end %>
 		
 
 		<span class='genre'>[<%= track.genre %>]</span>
