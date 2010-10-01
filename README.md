@@ -1,7 +1,7 @@
 Cloud-Down
 =========
 
-Cloud-Down - for music junkies
+Music discovery service
 
 ## Synopsis
 
